@@ -1,0 +1,56 @@
+body {
+    height: 100vh;
+    background-image: black;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    position: relative;
+    animation:rodar 3s  linear;
+
+}
+
+@keyframes rodar {
+    0%{
+        transform: rotate(45deg);
+        background-color: antiquewhite;
+    }
+    12.5%{
+        transform: rotate(90deg);
+        background-color: blue;
+    }
+    25%{
+        transform: rotate(135deg);
+        background-color: pink;
+    }
+    37.5%{
+        transform: rotate(180deg);
+        background-color: yellow;
+    }
+    50%{
+        transform: rotate(225deg);
+        background-color: green;
+    }
+    62.5%{
+        transform: rotate(270deg);
+        background-color: lightcoral;
+    }
+    75%{
+        transform: rotate(315deg);
+        background-color: white;
+    }
+    100%{
+        transform: rotate(360deg);
+        background-color: red;
+    }
+}

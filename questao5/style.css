@@ -1,0 +1,27 @@
+body {
+    height: 100vh;
+    background-image: white;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    animation:rodar 3s  linear;
+
+}
+
+@keyframes rodar {
+    0%{
+        transform: rotate(45deg);
+    }
+}
