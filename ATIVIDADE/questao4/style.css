@@ -1,0 +1,32 @@
+body {
+    height: 100vh;
+    background-image: white;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    animation:rodar 4s  linear;
+    animation-delay: 1s;
+}
+
+@keyframes rodar {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 500px;
+    }
+}
