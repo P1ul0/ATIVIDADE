@@ -1,0 +1,27 @@
+body{
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.q1{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+.q1:hover{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    border-radius: 0%
+}

@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    background-image: black;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border-radius: 50%;
+    position: relative;
+    animation:rodar 3s  linear 3;
+    transition: all 500ms;
+
+}
+
+@keyframes rodar {
+    0%{
+        transform: scale(1);
+        background-color: antiquewhite;
+    }
+    50%{
+        transform: scale(1.5);
+        background-color: black;
+    }
+    100%{
+        transform: scale(1);
+        background-color: red;
+    }
+}

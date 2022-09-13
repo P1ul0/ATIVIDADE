@@ -1,0 +1,48 @@
+body{
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.q1{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 50%;
+    transition: all 0.4s;
+    animation:  quicar 0.6s linear 4,mover 1s linear ;
+    position: relative;
+}
+
+
+@keyframes mover {
+    0%{
+
+        left: 0;
+    }
+    100%{
+        left: 800px;
+        
+    }
+    
+}
+@keyframes quicar {
+    0%{
+        
+        left: 800px;
+    }
+    50%{
+        left: 700px;
+    }
+    100%{
+        left: 800px;
+    }
+    
+}
